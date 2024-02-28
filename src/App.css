@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+/* App.css */
+
+/* Import Open Sans from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+body, #root, .App {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif; /* Set Open Sans as the default font */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #034694; /* Or any other color you want for the background */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Adds a subtle shadow to give a 3D effect */
   display: flex;
   flex-direction: column;
+  justify-content: space-between; /* Align content to bottom */
+  height: 100%; /* Adjust as per your design */
+  width: 300px; /* Adjust as per your design */
+  align-items: center;
+  text-align: center;
+  position: relative; /* Needed for absolute positioning of image */
+  padding-bottom: 0;
+}
+
+/* Additional styles for your quiz components */
+.question-count, .question-text, .score-section {
+  font-weight: 700; /* This makes the text bold */
+  color: #034694; /* Dark blue color */
+}
+
+.answer-section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.answer-section button {
+  font-weight: 600; /* Slightly less bold for button text */
+  background-color: #FFD700; /* Yellow background for the buttons */
+  color: #034694; /* Dark blue color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px; /* Provide adequate padding for tap targets */
+  margin: 10px 0; /* Add space between buttons */
+  cursor: pointer;
+}
+
+/* Adjusting font-size as per design requirements */
+.question-count {
+  font-size: 1.2rem;
+}
+
+.question-text {
+  font-size: 1.5rem; /* Larger font for the question */
+}
+
+.score-section {
+  font-size: 1.2rem;
+  margin-top: auto;
+}
+
+.character-image {
+  max-width: 100px; /* Adjust the size as needed */
+  position: absolute;
+  top: 10%; /* Adjust the position as needed */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  width: 60%; /* Adjust size as needed */
+  height: auto;
+}
+
+.logoCircle {
+  width: 80px; /* Adjust size as needed */
+  height: 80px; /* Adjust size as needed */
+  border-radius: 50%; /* Create circle shape */
+  background-color: white; /* Circle color */
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin-top: -40px; /* Adjust as needed to move circle up */
+  border: 3px solid #034694; /* Border color to match the logo background */
 }
