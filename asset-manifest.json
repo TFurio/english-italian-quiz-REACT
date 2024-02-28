@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/english-italian-quiz-REACT/static/css/main.28efa05e.css",
+    "main.js": "/english-italian-quiz-REACT/static/js/main.f443ec55.js",
+    "static/js/453.a5cb9011.chunk.js": "/english-italian-quiz-REACT/static/js/453.a5cb9011.chunk.js",
+    "index.html": "/english-italian-quiz-REACT/index.html",
+    "main.28efa05e.css.map": "/english-italian-quiz-REACT/static/css/main.28efa05e.css.map",
+    "main.f443ec55.js.map": "/english-italian-quiz-REACT/static/js/main.f443ec55.js.map",
+    "453.a5cb9011.chunk.js.map": "/english-italian-quiz-REACT/static/js/453.a5cb9011.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28efa05e.css",
+    "static/js/main.f443ec55.js"
+  ]
+}
